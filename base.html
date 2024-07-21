@@ -6,20 +6,27 @@
     <link rel="stylesheet" href="build/css/app.css">
     <title>Abilmx</title>
     <link rel="stylesheet" href="build/css/app.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <header class="header-base inicio">
+    <header class="contenedor header-base inicio">
         <div class="contenedor contenido-header">
             <div class="barra-base">
                 <a class="logo1" href="/">
                     <img class="logo" src="build/img/logoAbil.svg" alt="logotipo Abilmx">
                 </a>
 
+                <input type="checkbox"  id="check">
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
                 <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="anuncios.html">Anuncios</a>
+                    <a href="nosotros.html" style="--i:0">Nosotros</a>
+                    <a href="blog.html" style="--i:1">Blog</a>
+                    <a href="contacto.html" style="--i:2">Contacto</a>
+                    <a href="anuncios.html" style="--i:3">Anuncios</a>
                 </nav>
                 <div></div>
             </div><!--Barra-->

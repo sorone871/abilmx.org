@@ -3,9 +3,13 @@
 }
 .webp .inicio{
     background-image: url(../img/donacion.webp) no-repeat;
+
+   
 }
 .header-base {
    // background-color: transparent;
+
+   
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -32,6 +36,7 @@
         border: 2px solid  $rosado;
         box-shadow: 0 0 10px  $rosado, 0 0 40px $rosado, 0 0 70px $rosado;
     }
+    
 
 }
 .barra-base{
@@ -39,47 +44,24 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem 10%;
-    background-color: rgba(133, 2, 255, 70%);
+    padding: 0.5rem 10%;
+    
     display: flex;
     justify-content: space-between;
     z-index: 100;
-
-}
-// .navegacion-base a{
-//     font-size: 1.15rem;
-//     color: $blanco;
-//     text-decoration: none;
-//     font-weight: 500;
-//     margin-left: 2.5rem;
-// }
-
-.navegacion{
-    @include tablet{
-        display: flex;
-        align-items: center;
-        
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(133, 2, 255, 70%);
+        backdrop-filter: blur(10px);
+        z-index: -1;
     }
-        a{
-            color: $blanco;
-            text-decoration: none;
-            font-size: 2.2rem;
-            display: block;
-            text-align: center;
-            transition: .5s;
-            
-            @include tablet{
-                margin-right: 3rem;
-                &:last-of-type{
-                    margin-top: 0;
-                }
-            }
-            &:hover{
-                color: $blanco;
-                text-shadow: 0 0 10px  $blanco, 0 0 40px $blanco, 0 0 70px $blanco;
-            }
-        }
 }
+
 .inicio .overlay{
     position: absolute;
         background: rgb(85,0,255);
@@ -91,22 +73,28 @@
         justify-content: center;
 }
 .contenedor.inicio{
-   background-position: center center;
-   background-size: cover;
-   position: relative;
-   max-height: 70rem;
-   min-height: 50rem;
-   width: 100%;
-   max-width: 100%;
-   margin: 0 0 0 0;
-   overflow: hidden;
-    
-}
-.contenido-imagen{
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 0 0;
+    overflow: hidden;
+     
+ }.contenido-imagen{
     border-radius: 5px solid $blanco;
     padding: 20px;
     width: 63rem;
     background: rgb(255 255 255 /10%);
     backdrop-filter: blur(10px);
+    @include tablet{
+        //width: 100vh;
+    }
 }
+
+
+
+
  
