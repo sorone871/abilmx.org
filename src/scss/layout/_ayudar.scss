@@ -5,11 +5,11 @@
         //gap: 6rem;
     }
 }
-@include telefono{
-    .contenedor-card{
+
+@media (max-width: 768px) {
+    .contenedor-card {
         display: grid;
         gap: 5rem 2rem;
-       // grid-template-columns: repeat(3, 1fr);
     }
 }
 .contenedor-card{
@@ -79,6 +79,10 @@
 
     &:hover{
         height: 500px;
+
+        .card{
+            gap: 0 0 8rem 0;
+        }
         
         .imagen-card{
         top: -45px;
