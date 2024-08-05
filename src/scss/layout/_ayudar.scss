@@ -23,6 +23,7 @@
     background-color:  lighten($rosado, 2);
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     //width: 350px;esto rompe las medidas del ancho
