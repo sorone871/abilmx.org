@@ -1,0 +1,27 @@
+.boton-amarillo{
+    @include boton($amarillo, inline-block);
+}
+.boton-amarillo-block{
+    @include boton($amarillo, block);
+}
+.boton-verde{
+    @include boton($verde, inline-block);
+}
+.boton-accion{
+    //background-color: $azul;
+    color: $blanco;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    text-align: center;
+    margin-top: calc($separacion / 2);
+    display: inline-block;
+    width: fit-content;
+    border: 2px solid $naranja;
+    border-radius: 20px;
+    transition: .5s;
+
+    &:hover{
+        background-color: $naranja;
+    }
+}

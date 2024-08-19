@@ -1,0 +1,21 @@
+.no-webp .imagen-contacto{
+    background-image: url(../img/contactanos.jpg);
+}
+.webp .imagen-contacto{
+    background-image: url(../img/contactanos.webp);
+}
+
+.imagen-contacto{
+    align-items: center;
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0;
+
+    border-image: fill 0 linear-gradient(#0008,#000);
+    h2{
+        color: antiquewhite;
+        font-weight: $bold;
+    }
+}
