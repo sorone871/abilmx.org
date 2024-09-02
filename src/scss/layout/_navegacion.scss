@@ -10,7 +10,7 @@
 #check{
     display: none;
 }
-.navegacion{
+.navegacion {
     @include tablet{
         display: flex;
         align-items: center;

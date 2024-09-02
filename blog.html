@@ -4,33 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Abilmx</title>
-    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
+
+    <header class="header-prueba">
+
                 <a class="logo1" href="/">
                     <img class="logo" src="build/img/logoAbil.svg" alt="logotipo Abilmx">
                 </a>
 
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="anuncios.html">Anuncios</a>
+                <input type="checkbox"  id="check">
+                <label for="check" class="icons">
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <i class='bx bx-x' id="close-icon"></i>
+                </label>
+                <nav class="navegacion" >
+
+
+                            <a href="nosotros.html" style="--i:0">Nosotros</a>
+
+                            <a href="blog.html" style="--i:1">Blog</a>
+
+                            <a href="contacto.html" style="--i:2">Contacto</a>
+
+                            <a href="anuncios.html" style="--i:3">Anuncios</a>
+
                 </nav>
-                <div></div>
-            </div><!--Barra-->
+                <!-- <ul class="navegacion">
+                    <li>
+                        <a href="nosotros.html" style="--i:0">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" style="--i:1">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" style="--i:2">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="anuncios.html" style="--i:3">Anuncios</a>
+                    </li>
+                </ul> -->
+
+                <div class="buscar">
+                    <input type="text" placeholder="buscar...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+    </header>
+
+    <div class="banner ">
+        <div class="content active">
+            <img src="./build/img/the-little-mermaid-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
 
         </div>
-    </header>
-    
-    <main class="contenedor">
-        <h1>Asociación para el Bienestar Integral de La Laguna A.C.</h1>
-        <h1>Titulo pagina</h1>
-    </main>
+        
+        <section class="swiper mySwiper"><!--Slider-->
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                <div class="swiper-slide" 
+                onclick="cambiarFondo('bg-little-mermaid.jpg', 'the-little-mermaid')">
+                    <img src="build/img/movies/the-little-mermaid.jpeg" />
+                </div>
+                <div class="swiper-slide"
+                onclick="cambiarFondo('bg-65.jpeg', 'the-little-mermaid')">
+                    <img src="build/img/movies/65.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="build/img/movies/the-tank.jpeg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="build/img/movies/the-black-demon.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="build/img/movies/the-covenant.jpg" />
+                </div>
+            </div>
+            
+            
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        <section/> <!--Slider-->
+
+
+
+            <a href="" class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Ver trailer</a>
+
+            <ul class="sci">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
+                </li>
+            </ul>
+    </div>
+
+
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
@@ -47,5 +138,25 @@
 
 
     <script src="build/js/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 15,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+        });
+      </script>
 </body>
 </html>
