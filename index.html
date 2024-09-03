@@ -7,10 +7,12 @@
     <title>Abilmx</title>
     <link rel="stylesheet" href="build/css/app.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
-    <header class="contenedor header-base inicio">
+    <header class="contenedor header-base ">
         <div class="contenedor contenido-header">
             <div class="barra-base">
                 <a class="logo1" href="/">
@@ -33,7 +35,7 @@
 
         </div>
 
-        <div class="overlay">
+        <!-- <div class="overlay">
             <div class="contenedor contenido-imagen">
 
                 <h1 >Asociación para el Bienestar Integral de La Laguna A.C.</h1>
@@ -43,8 +45,147 @@
                 
                 <a class="boton-accion" href="index.html">base</a>
             </div>
-        </div>
+        </div> -->
+
     </header>
+    <main class="banner ">
+        <div class="content the-little-mermaid active">
+            <img src="./build/img/the-little-mermaid-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
+
+        </div>
+        <div class="content bg-65">
+            <img src="./build/img/the-65-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
+
+        </div>
+        <div class="content the-tank">
+            <img src="./build/img/the-tank-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
+
+        </div>
+        <div class="content the-black-demon">
+            <img src="./build/img/the-black-demon-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
+
+        </div>
+        <div class="content the-covenant">
+            <img src="./build/img/the-covenant-title.webp"
+            alt="" class="movie-title">
+
+            <h4>
+                <span>2023</span> <span><i>12+</i></span> <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequatur illum rerum nemo ullam architecto fuga cum, incidunt ex et voluptates laudantium voluptas, possimus rem, commodi natus corporis! Reiciendis dolores ipsa deleniti rerum id! Eaque error incidunt unde quos! Mollitia, molestiae? Consequuntur nostrum temporibus inventore optio, veniam maiores facere perferendis.</p>
+
+            <div class="boton">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Ver</a>
+
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Mi Lista</a>
+            </div>
+
+        </div>
+        
+        <section class="swiper mySwiper"><!--Slider-->
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                <div class="swiper-slide" 
+                onclick="cambiarFondo('bg-little-mermaid.jpg', 'the-little-mermaid')">
+                    <img src="build/img/movies/the-little-mermaid.jpeg" />
+                </div>
+                <div class="swiper-slide"
+                onclick="cambiarFondo('bg-65.webp', 'bg-65')">
+                    <img src="build/img/movies/65.jpg" />
+                </div>
+                <div class="swiper-slide"
+                onclick="cambiarFondo('bg-the-tank.jpeg', 'the-tank')">
+                    <img src="build/img/movies/the-tank.jpeg" />
+                </div>
+                <div class="swiper-slide"
+                onclick="cambiarFondo('bg-the-black-demon.jpeg', 'the-black-demon')">
+                    <img src="build/img/movies/the-black-demon.jpg" />
+                </div>
+                <div class="swiper-slide"
+                onclick="cambiarFondo('the-covenant.jpg', 'the-covenant')">
+                    <img src="build/img/movies/the-covenant.jpg" />
+                </div>
+            </div>
+            
+            
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        <section/> <!--Slider-->
+
+
+
+            <a href="" class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Ver trailer</a>
+
+            <ul class="sci">
+                <li>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></i></a>
+                </li>
+            </ul>
+    </main>
     
     
     <!-- Seccion ayuda -->
@@ -197,5 +338,25 @@
 
 
     <script src="build/js/bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 15,
+            stretch: 0,
+            depth: 500,
+            modifier: 1,
+            slideShadows: true,
+          },
+          loop: true,
+        });
+      </script>
 </body>
 </html>

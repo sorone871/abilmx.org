@@ -40,6 +40,8 @@
 }
 
 //Prueba en contacto.html
+
+
 .header-prueba{
     position: absolute;
     top: 0;
@@ -89,7 +91,17 @@
     border-right: 1px solid $blanco;
 }
 //banner
+@include tablet{
+    .banner{
+        display: block;
+        //position: relative;
+        column-gap: 2rem;
+    }
+
+}
+
 .banner{
+     
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -97,6 +109,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   // background: url(../img/movies/);
     background: url('../img/movies/bg-little-mermaid.jpg') no-repeat;//muesta la imagen sin repetir pero falta parte por cubrir
     background-size: cover; //pasa a cubrir todo 
     background-position: center;
@@ -113,6 +126,18 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+    //esto solo afecta al modo mobile
+    .banner{
+        display: block;
+        gap: 8rem;
+        
+    }
+    .content{
+        margin-bottom: 3rem;
+    }
+
 }
 .content{
     position: relative;
