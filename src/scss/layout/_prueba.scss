@@ -130,12 +130,27 @@
 @media (max-width: 768px) {
     //esto solo afecta al modo mobile
     .banner{
-        display: block;
-        gap: 8rem;
+        // display: block;
+        // gap: 8rem;
+        display: flex; /* Activar Flexbox */
+        flex-wrap: wrap;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        //height: 100vh; /* Altura completa de la ventana */
+        transform: scale(1); /* Escala del contenido */
+        transition: .5s; /* Transición suave */
+        visibility: visible;
+        width: 100vw; /* Ancho completo de la ventana */
         
     }
-    .content{
+    .content .active{
         margin-bottom: 3rem;
+        padding: 1rem 1rem;
+        
+    }
+    .swiper{
+        width: 250px;
+        margin: 0;
     }
 
 }
@@ -154,6 +169,7 @@
     visibility: visible;
     transform: scale(1);
     transition: .5s;
+    width: 100vh;
 }
 .movie-title{
     max-width: 300px;
